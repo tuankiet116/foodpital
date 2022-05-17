@@ -1,0 +1,159 @@
+
+.row #left-sidebar, .row #right-sidebar {
+    height: 100%;
+    padding: 0;
+    position: fixed; 
+    top: 70px;
+    z-index: 1;
+}
+.row #left-sidebar{
+    left: 0;
+}
+.row #right-sidebar{
+    right: 5px;
+}
+.row #left-sidebar #categories-nav, .row #right-sidebar #categories-online-friends {
+    height: 100%;
+    padding: 0;
+}
+
+.row #left-sidebar #categories-nav ul, .row #right-sidebar #categories-online-friends ul {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    margin: 0;
+    padding-top: 20px;
+}
+.row #left-sidebar #categories-nav ul {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.row #right-sidebar #categories-online-friends ul {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.row #left-sidebar #categories-nav ul li {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 50px;
+    font-size: 18px;
+    text-align: left;
+    color: #55afca;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.row #left-sidebar #categories-nav ul li:hover {
+    background-color: #fff;
+    color: #00adef;
+}
+.viewnow {
+    background-color: #fff;
+    color: #00adef !important;
+}
+.row #left-sidebar #categories-nav ul a li span {
+    margin-left: 10px;
+}
+.row #left-sidebar #categories-nav ul a {
+    color: #00adef ;
+    text-decoration: none ;
+}
+
+.row #right-sidebar #categories-online-friends ul a{
+    text-decoration: none;
+    color: #6e6e6e;
+    
+}
+.row #right-sidebar #categories-online-friends ul a li{
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.row #right-sidebar #categories-online-friends ul a li:hover{
+    background-color: #fff;
+}
+.row #right-sidebar #categories-online-friends ul a li .friend-avatar {
+    height: 100%;
+    width: 60px;
+    padding: 5px;
+    position: relative;
+    height: 60px;
+}
+.row #right-sidebar #categories-online-friends ul a li .friend-avatar img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.row #right-sidebar #categories-online-friends ul a li .friend-avatar .status {
+    position: absolute;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    bottom: 4px;
+    right: 7%;
+}
+.row #right-sidebar #categories-online-friends ul a li .friend-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: center;
+    width: calc(100% - 80px);
+}
+.row #right-sidebar #categories-online-friends ul a li .friend-name h6, .row #right-sidebar #categories-online-friends ul a li .friend-name p {
+    margin: 0;
+}
+.row #right-sidebar #categories-online-friends ul a li .friend-name p {
+    font-size: 15px;
+}
+.row #right-sidebar #categories-online-friends ul a li .friend-avatar .status.online {
+    background: #48e24e;
+}
+.row #right-sidebar #categories-online-friends ul a li .friend-avatar .status.offline {
+    background: #adadad;
+}
+.small-display-cate{
+    display: block !important;
+    background: #000000;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .row #right-sidebar #categories-online-friends ul a li .friend-name p {
+        display: none;
+    }
+    .row #left-sidebar #categories-nav ul a li, .row #right-sidebar #categories-online-friends ul a li {
+        padding-left: 20px;
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .row #left-sidebar #categories-nav, .row #right-sidebar #categories-online-friends {
+        width:100%;
+        margin: 0;
+    }
+    .row #right-sidebar #categories-online-friends ul a li .friend-name, .row #left-sidebar #categories-nav ul a li span {
+        display: none;
+    }
+    .row #left-sidebar #categories-nav ul a li i{
+        width: 100%;
+    }
+    .row #left-sidebar #categories-nav ul a li, .row #right-sidebar #categories-online-friends ul a li {
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+}

@@ -1,0 +1,251 @@
+
+
+#view-page #content .card-profile{
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color:#fff;
+    box-shadow: 0px 0px 9px 1px #bfd0d0;
+    padding: 0;
+}
+
+#view-page #content .card-profile .cover-side{
+    height: 320px;
+    width: 100%;
+    position: relative;
+}
+
+#view-page #content .card-profile .cover-side #cover-photo{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+#view-page #content .card-profile .cover-side .avatar-side{
+    position: absolute;
+    height: 200px;
+    transform: translateX(-50%);
+    width: 200px;
+    left: 50%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    bottom: -25px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#view-page #content .card-profile .cover-side .avatar-side #avatar-photo{
+    max-width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    object-fit: cover;
+}
+#view-page #content .card-profile .cover-side .avatar-side #edit-avatar {
+    position: absolute;
+    bottom: 0;
+    background: #000;
+    opacity: 0.5;
+    height: 25%;
+    width: 100%;
+    display: none;
+}
+#view-page #content .card-profile .cover-side .avatar-side #edit-avatar label{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+#view-page #content .card-profile .cover-side .avatar-side #edit-avatar input{
+    display: none;
+}
+
+#view-page #content .card-profile .information-side {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#view-page #content .card-profile .information-side .social-links, #view-page #content .card-profile .information-side .social-info{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    text-align: center;
+}
+#view-page #content .card-profile .information-side .name-info{
+    justify-content: center;
+    display: flex;
+    margin-top: 35px;
+    position: absolute;
+    cursor: default;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#view-page #content .card-profile .information-side .name-info h4 {
+    height: 30px;
+    margin: 0;
+}
+#view-page #content .card-profile .information-side .avatar img {
+    height: 100%;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#view-page #content .card-profile .information-side .social-links a{
+    height: 100%;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 15px;
+    color: #00adef;
+}
+#view-page #content .card-profile .information-side .social-info {
+    justify-content: flex-end;
+}
+#view-page #content .card-profile .information-side .social-info div {
+    margin: 0 15px;
+    padding: 15px 0px;
+    color: #00adef;
+}
+
+#view-page #content .user-tabing{
+    height: 70px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 9px 1px #bfd0d0;
+    padding: 0;
+}
+#view-page #content .user-tabing a {
+    width: 25%;
+    position: relative;
+    height: 100%;
+    text-decoration: none;
+    background-color: #fff;
+    color: #00adef;
+    text-align: center;
+    line-height: 70px;
+    font-size: 22px;
+    border-radius: 5px;
+    font-weight: 400;
+    transition: 0.3s;
+    padding: 0;
+}
+#view-page #content .user-tabing a:hover{
+    background-color: #00abef50;
+    color: #fff;
+}
+#view-page #content .user-tabing a.active{
+    background-color: #00adef !important;
+    color: #fff !important;
+}
+.tab-panel {
+    width: 100%;
+    position: relative;
+}
+.tab-panel > .row{
+    margin: 0;
+    display: none;
+    width: 100%;
+}
+.tab-panel > .row.active{
+    display: flex;
+}
+.tab-panel > .row#feed-tab-panel #feed-right{
+    padding-right: 10px !important;
+    padding-left: 0px !important;
+}
+.tab-panel > .row#feed-tab-panel #feed-right #photo-modal ul, .tab-panel > .row#feed-tab-panel #feed-right #photo-modal ul {
+    margin: 10px 0;
+}
+.tab-panel > .row#feed-tab-panel #feed-right #photo-modal ul li {
+    padding: 5px;
+}
+.tab-panel > .row#feed-tab-panel #feed-right #photo-modal ul li a img{
+    top: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.tab-panel > .row#contact-tab-panel, .tab-panel > .row#photo-tab-panel{ 
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 9px 1px #bfd0d0;
+}
+
+.tab-panel > .row#contact-tab-panel ul li a, .tab-panel > .row#photo-tab-panel ul li a {
+    color: #00adef;
+    transition: 0.3s;
+}
+
+.tab-panel > .row#contact-tab-panel ul li a.active, .tab-panel > .row#photo-tab-panel ul li a.active {
+    background-color: #00adef;
+    color: #fff;
+}
+.tab-panel > .row#contact-tab-panel ul li a:hover, .tab-panel > .row#photo-tab-panel ul li a:hover{
+    background-color: #00abef50;
+    color: #fff;
+}
+.nav-pills .nav-link.active {
+    background-color: #00adef;
+}
+.nav-pills .nav-link:hover, .nav-pills .show>.nav-link:hover {
+    background-color: #00abef50;
+    color: #fff;
+    transition: 0.3s;
+}
+.infor-item {
+    position: relative;
+}
+.infor-item i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #869090;
+}
+
+.infor-item i:hover{
+    color: #00adef;
+}
+
+@media screen and (max-width:1300px)
+{
+	#view-page #content .card-profile{
+        height: 560px;
+    }
+    #view-page #content .card-profile .information-side{
+        height: 240px;
+        flex-wrap: wrap;
+        place-content: flex-start;
+    }
+    #view-page #content .card-profile .information-side .social-links{
+        margin-top: 70px;
+    }
+    #view-page #content .card-profile .information-side .social-links, #view-page #content .card-profile .information-side .social-info{
+        width: 100%;
+        height: calc(100%/3);
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .tab-panel > .row#feed-tab-panel #feed-right{
+        padding: 0 !important;
+    }
+}
+@media screen and (max-width:768px) {
+
+}
+@media screen and (max-width:576px) {
+	
+}
